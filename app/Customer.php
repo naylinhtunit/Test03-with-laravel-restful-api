@@ -4,12 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Country extends Model
+class Customer extends Model
 {
-    protected $table = 'countries';
-
+    //
+    protected $table = 'customers';
     public $timestamps = false;
     protected $hidden = ["created_at", "updated_at"];
-
-    protected $fillable = ['city', 'firstName', 'lastName'];
+    protected $fillable = ['name', 'description'];
 }

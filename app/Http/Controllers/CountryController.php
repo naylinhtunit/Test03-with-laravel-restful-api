@@ -14,6 +14,7 @@ class CountryController extends Controller
         return response()->json(Country::get(), 200);
     }
     
+    // show
     public function countryById($id)
     {
         // find id
@@ -26,6 +27,7 @@ class CountryController extends Controller
         }
     }
     
+    //create
     public function countrySave(Request $request)
     {
         //validate
@@ -43,6 +45,7 @@ class CountryController extends Controller
         return response()->json($country, 201);
     }
     
+    //update
     public function countryUpdate(Request $request, $id)
     {
         //
@@ -55,7 +58,8 @@ class CountryController extends Controller
         }
     }
 
-    public function countryDelete(Request $request, $id)
+    //delete
+    public function countryDelete($id)
     {
         //
         $country = Country::find($id);

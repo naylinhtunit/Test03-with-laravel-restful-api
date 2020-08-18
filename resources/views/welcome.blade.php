@@ -85,9 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{env('app_url')}}/api/authors" target="_blank">Authors</a>
-                    <a href="{{env('app_url')}}/api/books" target="_blank">Books</a>
-                    <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en" target="_blank">Json Formatter</a>
+                    <a href="{{env('app_url')}}/api/country" target="_blank">Country</a>
+                    <a href="{{env('app_url')}}/api/customer" target="_blank">Customer</a>
                 </div>
             </div>
         </div>
